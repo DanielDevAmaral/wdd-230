@@ -45,9 +45,10 @@ main h2{
 }
 
 .card{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+
+    margin: 20px;
+    border-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
