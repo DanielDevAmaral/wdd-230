@@ -1,0 +1,18 @@
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .one{
+    grid-column: 1/2;
+  }
+  .two{
+    grid-column: 2/3;
+  }
+  .three{
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+}
