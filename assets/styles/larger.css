@@ -1,13 +1,17 @@
 @media screen and (min-width: 500px){
 
-	nav {
-		display: flex;
-        
+    #menu {
+		display: none; /* hide hamburger button */
 	}
 
-    nav a{
-        flex: 1 1 100%;
-    }
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
 
     main{
         display:grid;
@@ -22,6 +26,17 @@
         position: relative;
         top: -5%;
     }
+
+    .map{
+        grid-column: 1/3;
+        text-align-last: center;
+        padding-bottom: 30px;
+    }
+
+    .flag{
+        width: 3%;
+        padding-left: 10px;
+      }
 
 
 }   
