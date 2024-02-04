@@ -1,0 +1,23 @@
+@media screen and (min-width: 500px){
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+        display: inline-flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: #264653;
+        color: #fff;
+        vertical-align: top;
+        position: absolute;
+        right: 0;   
+	}
+
+	.navigation a {
+        display: flex;
+
+	}
+
+}       
