@@ -78,4 +78,10 @@ header h1{
 footer{
     background-color: #264653;
     color: white;
+    text-align-last: center;
+    display: flex;
 }
+
+.flag{
+    width: 2%;
+  }
