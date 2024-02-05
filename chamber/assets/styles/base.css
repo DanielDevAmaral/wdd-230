@@ -85,3 +85,49 @@ footer{
 .flag{
     width: 2%;
   }
+
+
+
+
+
+
+
+
+
+
+  .card{
+
+    margin: 20px;
+    border-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card h3{
+    text-align: center;
+    background-color: #E9C46A;
+    border: solid #264653;
+    border-bottom: 0px;
+    border-width: 1px;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #264653;
+    font-size: 18px;
+    padding: 15px 15px;
+}
+
+.card a{
+    color: blue;
+    text-decoration: none;
+}
+.card li{
+    padding-bottom: 12px;
+}
+.card ul {
+    list-style-type: none;
+  }
+
+  .card p{
+    text-align: center;
+  }
