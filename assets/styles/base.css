@@ -4,7 +4,8 @@ body{
 
 header{
     background-color: #14213D;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     justify-content: center;
     height: 50%;
@@ -13,13 +14,21 @@ header{
 header h1{
     color: white;
     font-size: 20px;
-    padding-left: 40px;
     align-self: center;
+    justify-self: center;
 }
 
 header img {
     width: 50px;
     padding: 5px 5px;
+    justify-self: self-end;
+}
+
+.switch-button{
+    align-self: center;
+    padding-right: 75px;
+    justify-self: self-end;
+    cursor: pointer;
 }
 
 #menu{
