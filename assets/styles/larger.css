@@ -13,6 +13,14 @@
 		flex: 1 1 100%;
 	}
 
+    .herolabel{
+        top: 193px;
+    }
+
+    .herolabel h1 {
+        font-size: 1.5rem;
+    }
+
     main{
         display:grid;
         grid-template-columns: auto auto;

@@ -21,7 +21,7 @@
       property="og:title"
       content="Daniel Amaral - WDD 230 - Web Frontend Development"
     />
-    <meta property="og:type" content="Projects" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://danieldevamaral.github.io/wdd230/"
@@ -35,7 +35,7 @@
   </head>
   <body>
     <header class="top">
-      <img src="assets/images/daniel.jpg" alt="" />
+      <img src="assets/images/daniel.webp" alt="" />
       <h1>Daniel Leite Amaral</h1>
     </header>
     <!-- test -->
@@ -51,6 +51,17 @@
         >Scripture</a
       >
     </nav>
+
+    <div class="hero">
+      <picture>
+        <source srcset="assets/images/hero-mobile.webp" media="(max-width: 400px)">
+        <source srcset="assets/images/hero-medium.webp" media="(max-width: 960px)">
+        <img src="assets/images/hero-landscape.webp" alt="Provo City Central Temple">
+      </picture>
+      <div class="herolabel">
+      <h1>Provo City Central Temple</h1>
+      </div>
+    </div>
 
     <!-- test -->
 
@@ -83,7 +94,7 @@
             <a href="http://www.example.com">in process</a>
           </li>
           <li>
-            06: <a href="http://www.example2.com">in process</a> |
+            06: <a href="lesson06/responsive-images.html">Responsive images</a> |
             <a href="http://www.example.com">in process</a>
           </li>
           <li>
