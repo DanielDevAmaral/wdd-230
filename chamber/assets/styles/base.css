@@ -68,14 +68,9 @@ header h1{
     display: block;
 }
 
-.active{
-    background: 
-    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
+.navigation .active{
+    color: #f0dda8;
+    font-weight: bold;
 }
 
 .hero img{
@@ -113,13 +108,13 @@ footer{
 .card h3{
     text-align: center;
     background-color: #E9C46A;
-    border: solid #264653;
+    border: solid #1a3947;
     border-bottom: 0px;
     border-width: 1px;
     
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    color: #264653;
+    color: #1a3947;
     font-size: 18px;
     padding: 15px 15px;
 }
