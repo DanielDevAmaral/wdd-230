@@ -147,8 +147,7 @@ input:checked + .slider:before {
 
 .hero-image img{
     width: 100%;
-    object-fit: cover;
-    aspect-ratio: 2/1;
+
 }
 
 main{
