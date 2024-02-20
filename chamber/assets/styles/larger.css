@@ -26,4 +26,19 @@
   .mobile-spotlight{
     display: none;
   }
+
+  .hero-image img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+
+}
+
+.card-weather h3,
+.card-events h3,
+.card-company h3{
+        position: relative;
+        top: -20px;
+}
+
 }

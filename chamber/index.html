@@ -33,9 +33,7 @@
   <body>
     <!-- Header Section -->
     <header class="top">
-      <img class="logo" src="assets/images/logo.webp" alt="" />
-
-      <h1 style="align-self: center;">Aracaju Chamber of Commerce</h1>
+      <h1 class="name-logo" style="align-self: center; padding: 0.5rem;">Aracaju Chamber</h1>
 
       <button id="menu"></button>
 
@@ -43,8 +41,17 @@
         <a href="#" class="active">Home</a>
         <a href="lesson03/chamber-site-plan.html">Discover</a>
         <a href="chamber/">Directory</a>
-        <a href="chamber/">join</a>
       </nav>
+
+      <!--Switch test -->
+      <label class="switch">
+        <input type="checkbox" >
+        <span class="slider round"></span>
+      </label>
+      <!--Switch test -->
+      <section class="cta">
+        <a href="#" class="join-button">Join Now</a>
+      </section>
     </header>
 
       <div class="hero-image">
@@ -61,9 +68,7 @@
         </picture>
       </div>
 
-    <section class="cta">
-      <a href="#" class="join-button">Join Now</a>
-    </section>
+
 
     <main>
       <section class="card-events">
@@ -72,6 +77,13 @@
 
       <section class="card-weather">
         <h3>Weather Forecast</h3>
+        <div class="body-weather">
+          <p>Temperature:</p> <input placeholder="lower or equal 50°F" class="temp" type="number">
+          <p>Windspeed</p> <input placeholder="higher 3.0mph" class="wind" type="number">
+          <button id="calculate">Calculate Windchill</button>
+          <p>Windchill</p>
+          <p class="windchill"></p>
+        </div>
       </section>
     </main>
 
@@ -94,12 +106,14 @@
   </div>
 
     <footer>
+      <img class="logo" src="assets/images/logo.webp" alt="" />
       <p id="currentYear"></p>
       <p id="lastModified"></p>
     </footer>
 
+    <script src="assets/scripts/windchill.js"></script>
+    <script src="assets/scripts/switch.js"></script>
     <script src="assets/scripts/getdates.js"></script>
     <script src="assets/scripts/menu.js"></script>
-    <script src="assets/scripts/switch.js"></script>
   </body>
 </html>

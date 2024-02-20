@@ -1,18 +1,30 @@
 @media screen and (min-width: 500px){
 
+
+        header {
+                background-color: #264653;
+                display: grid;
+                /* grid-template-rows: 1fr; */
+            }
+
+        .name-logo{
+            grid-row: 1;
+            margin: 0.5rem;
+        }
+
     #menu {
 		display: none; /* hide hamburger button */
 	}
 
 	.navigation {
+        justify-self: center;
         display: inline-flex;
         flex-direction: row;
         list-style: none;
         background-color: #264653;
         color: #fff;
         vertical-align: top;
-        position: absolute;
-        right: 0;   
+        grid-row: 1;
 	}
 
 	.navigation a {
@@ -22,5 +34,26 @@
         .mobile-spotlight{
                 display: none;
               }
+
+        .switch{
+                grid-row: 1;
+                justify-self: flex-end;
+                margin: 1rem;
+        }
+
+        .cta{
+                display: none;
+                grid-row: 1;
+                grid-column: 3/4;
+                align-self: center;
+                justify-self: center;
+        }
+
+        .cta a{
+                text-decoration: none;
+                color: white;
+        }
+
+
 
 }       
