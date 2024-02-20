@@ -19,5 +19,8 @@
         display: flex;
 
 	}
+        .mobile-spotlight{
+                display: none;
+              }
 
 }       
