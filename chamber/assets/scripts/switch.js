@@ -8,6 +8,7 @@ const main = document.querySelector("main")
 const cards = document.querySelector(".spotlights-cards")
 const checkbox = document.querySelector('input[type="checkbox"]');
 const pic = document.querySelector("picture");
+const body = document.querySelector("body");
 
 //#A9A9A9 grey
 
@@ -22,15 +23,16 @@ checkbox.addEventListener("click", function() {
 		events.style.background = "#662549";
 		events.style.color = "#fff"
 		weather.style.background = "#662549";
-		weather.style.color = "#fff"
+		weather.style.color = "#fff";
+		body.style.backgroundColor = "#333";
 		company.forEach(element => {
 			element.style.background = "#662549";
 			element.style.color = "#fff"
 		});
 
 	} else if(!checkbox.checked) {
-		main.style.background = "#fff";
-		cards.style.background = "#fff";
+		main.style.background = "#EEEEEE";
+		cards.style.background = "#EEEEEE";
 		header.style.background = "#264653";
 		nav.style.background = "#264653";
 		footer.style.background = "#264653";
@@ -42,7 +44,8 @@ checkbox.addEventListener("click", function() {
 			element.style.background = "#e9c46a";
 			element.style.color = "#1a3947"
 		});
-		pic.style.background = "#fff";
+		pic.style.background = "#EEEEEE";
+		body.style.backgroundColor = "#EEEEEE";
 
 
 	}

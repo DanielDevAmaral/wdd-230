@@ -158,6 +158,8 @@ main{
 .card-weather,
 .card-events,
 .card-company {
+    background-color: #fff;
+    border-radius: 20px;
   margin: 20px;
   border-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
