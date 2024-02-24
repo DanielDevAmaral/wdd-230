@@ -29,7 +29,6 @@
     <meta name="author" content="Daniel Leite Amaral" />
     <meta name="description" content="WDD 230 - Web Frontend Development" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
 
     <title>Daniel Amaral - WDD 230 - Web Frontend Development</title>
   </head>
@@ -38,7 +37,6 @@
       <img src="assets/images/daniel.webp" alt="" />
       <h1>Daniel Leite Amaral</h1>
     </header>
-    <!-- test -->
 
     <button id="menu"></button>
 
@@ -54,16 +52,23 @@
 
     <div class="hero">
       <picture>
-        <source srcset="assets/images/hero-mobile.webp" media="(max-width: 400px)">
-        <source srcset="assets/images/hero-medium.webp" media="(max-width: 960px)">
-        <img src="assets/images/hero-landscape.webp" alt="Provo City Central Temple">
+        <source
+          srcset="assets/images/hero-mobile.webp"
+          media="(max-width: 400px)"
+        />
+        <source
+          srcset="assets/images/hero-medium.webp"
+          media="(max-width: 960px)"
+        />
+        <img
+          src="assets/images/hero-landscape.webp"
+          alt="Provo City Central Temple"
+        />
       </picture>
       <div class="herolabel">
-      <h1>Provo City Central Temple</h1>
+        <h1>Provo City Central Temple</h1>
       </div>
     </div>
-
-    <!-- test -->
 
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
@@ -94,11 +99,12 @@
             <a href="http://www.example.com">in process</a>
           </li>
           <li>
-            06: <a href="lesson06/responsive-images.html">Responsive images</a> |
+            06:
+            <a href="lesson06/responsive-images.html">Responsive images</a> |
             <a href="http://www.example.com">in process</a>
           </li>
           <li>
-            07: <a href="http://www.example2.com">in process</a> |
+            07: <a href="lesson07/lazyload.html">Lazy Loading</a> |
             <a href="http://www.example.com">in process</a>
           </li>
           <li>
@@ -119,6 +125,9 @@
       <section class="card">
         <h3>Information</h3>
         <p>Aracaju, Brazil</p>
+        <p>
+          <span class="label">Page Visits: </span> <span class="visits"></span>
+        </p>
         <div class="weather"></div>
         <div class="visits"></div>
       </section>
@@ -126,7 +135,6 @@
       <div class="map" style="width: 100%">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250652.11813169048!2d-37.26831607581883!3d-11.005626188293402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab04015be27cd%3A0x804434fd92ec3b36!2sAracaju%2C%20SE!5e0!3m2!1spt-BR!2sbr!4v1706238908806!5m2!1spt-BR!2sbr"
-          width="90%"
           height="600"
           style="border: 0"
           allowfullscreen=""
@@ -141,8 +149,7 @@
       <p id="lastModified"></p>
     </footer>
 
-    <!-- dasd-->
-
+    <script src="assets/scripts/visitCounter.js"></script>
     <script src="assets/scripts/getdates.js"></script>
     <script src="assets/scripts/menu.js"></script>
     <script src="assets/scripts/switch.js"></script>

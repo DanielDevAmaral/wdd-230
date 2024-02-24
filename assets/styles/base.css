@@ -157,6 +157,12 @@ main h2{
     text-align: center;
   }
 
+  .map iframe{
+    width: 90%;
+
+  }
+
+
   .map{
     text-align-last: center;
     padding-bottom: 30px;
