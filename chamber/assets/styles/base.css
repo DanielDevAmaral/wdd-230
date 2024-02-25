@@ -249,3 +249,33 @@ footer {
   width: 2%;
 }
 
+
+
+
+
+
+/* Discovery page */
+
+.discover-main{
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+}
+
+.sidebar{
+  grid-column: 1/2;
+}
+
+.middle{
+  grid-column: 2/3;
+  width: 100%;
+}
+
+.middle img{
+  max-width: 50%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+}
+
+.side{
+  margin: 50px;
+}
+
