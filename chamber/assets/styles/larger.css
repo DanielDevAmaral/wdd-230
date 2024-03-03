@@ -39,4 +39,15 @@
         top: -20px;
 }
 
+.main-content img{
+	-webkit-transform: scale(.8);
+	transform: scale(.8);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.main-content img:hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 }

@@ -33,50 +33,7 @@
   </head>
 
   <body>
-    <!-- JavaScript -->
-    <script>
-      // Lazy Load Images
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll("img[data-src]");
-        const options = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.1,
-        };
 
-        const observer = new IntersectionObserver(function (entries, observer) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              img.src = img.dataset.src;
-              observer.unobserve(img);
-            }
-          });
-        }, options);
-
-        images.forEach((image) => {
-          observer.observe(image);
-        });
-
-        // Check and Display Visit Message
-        const lastVisit = localStorage.getItem("lastVisit");
-        if (lastVisit) {
-          const daysPassed = Math.floor(
-            (Date.now() - lastVisit) / (1000 * 60 * 60 * 24)
-          );
-          if (daysPassed === 1) {
-            document.getElementById(
-              "visit-message"
-            ).textContent = `You last visited ${daysPassed} day ago.`;
-          } else {
-            document.getElementById(
-              "visit-message"
-            ).textContent = `You last visited ${daysPassed} days ago.`;
-          }
-        }
-        localStorage.setItem("lastVisit", Date.now());
-      });
-    </script>
 
     <!-- CSS -->
     <style>
@@ -116,7 +73,7 @@
 
     <header class="top">
       <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
-        Aracaju Chamber
+        Aracaju Chamber of Commerce
       </h1>
 
       <button id="menu"></button>
@@ -141,9 +98,7 @@
     <div class="grid-container">
       <!-- Sidebar -->
       <div class="sidebar">
-        <p id="visit-message" style="font-weight: bold">
-          Welcome! Let us know if you have any questions.
-        </p>
+        <p id="visit-message"></p>
 
         <h2>Best Hotels</h2>
         <p>
@@ -173,7 +128,7 @@
       <p id="lastModified"></p>
     </footer>
 
-    <script src="assets/scripts/windchill.js"></script>
+    <script src="assets/scripts/lastvisit.js"></script>
     <script src="assets/scripts/switch.js"></script>
     <script src="assets/scripts/getdates.js"></script>
     <script src="assets/scripts/menu.js"></script>

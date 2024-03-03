@@ -46,6 +46,10 @@ header h1 {
   content: "✖";
 }
 
+#visit-message{
+  font-weight: bold;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -278,4 +282,8 @@ footer {
 .side{
   margin: 50px;
 }
+
+
+
+
 
