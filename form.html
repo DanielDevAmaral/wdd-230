@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+
+    <meta
+      property="og:image"
+      content="https://blog.123milhas.com/wp-content/uploads/2023/03/aniversario-de-aracaju-tres-curiosidades-sobre-a-cidade-conexao123.jpg"
+    />
+    <meta
+      property="og:title"
+      content="Daniel Amaral - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://danieldevamaral.github.io/wdd230/"
+    />
+    <meta name="author" content="Daniel Leite Amaral" />
+    <meta name="description" content="WDD 230 - Web Frontend Development" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Daniel Amaral - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header class="top">
+        <img src="assets/images/daniel.webp" alt="" />
+        <h1>Daniel Leite Amaral</h1>
+      </header>
+  
+      <button id="menu"></button>
+  
+      <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures"
+          >Scripture</a
+        >
+      </nav>
+
+      <main>
+        <form action="/action_page.php">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"
+          title="Username" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"
+          pattern="[A-Za-z]{8}" title="password" required><br><br>
+
+          <label for="password">Confirm your password:</label>
+          <input type="password" id="password_check" name="password"
+          pattern="[A-Za-z]{8}" title="password" required><br><br>
+          
+          <label for="email">Your best e-mail:</label>
+          <input type="email" id="email" name="email"
+          title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required><br><br>]
+
+          <button id="btnSubmit" type="submit">Send Message</button>
+
+          <label for="r">INPUT: range, min, max, datalist, required</label>
+          <div id="rangevalue">0</div>
+          <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+          <datalist id="rangevalues">
+          	<option value="0">0</option>
+          	<option value="1">1</option>
+          	<option value="2">2</option>
+          	<option value="3">3</option>
+          	<option value="4">4</option>
+          	<option value="5">5</option>
+          </datalist>
+          <div class="ref">
+          	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+          </div>
+          <hr>
+        </form>
+      </main>
+
+
+
+
+    <footer>
+      <p id="currentYear"></p>
+      <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
