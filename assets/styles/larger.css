@@ -48,4 +48,107 @@
       }
 
 
+
+
+/* Forms 👇 */
+
+
+      form {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        grid-column: 1;
+    }
+    
+    input,
+    textarea,
+    select {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 0;
+        border-bottom: 1px solid var(--main-color);
+        font-size: 1.1rem;
+    }
+    
+    button {
+        align-items: center;
+        background-color: var(--main-color);
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: var(--font);
+        font-size: 16px;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 480px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s var(--sec-color);
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+    }
+    
+    
+    button:hover,
+    button:focus { 
+      background-color: var(--sec-color);
+      color: #ffffff;
+    }
+    
+    button:active {
+      background: var(--sec-color);
+      color: rgb(255, 255, 255, .7);
+    }
+    
+    button:disabled { 
+      cursor: not-allowed;
+      background: rgba(0, 0, 0, .08);
+      color: rgba(0, 0, 0, .3);
+    }
+    
+    
+    label {
+        color: var(--main-color);
+        font-size: 16px;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    
+    input::placeholder {
+        font-size: 13px;
+    }
+    
+    #formmessage {
+        visibility: none;
+        margin: 10px;
+        padding: 0.5rem;
+        color: red;
+    }
+    
+    .req::after {
+        font-size: 10px;
+        content: " *️⃣";
+    }
+    
+    .form-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+    }
+
+
 }   
