@@ -50,4 +50,30 @@
 	transform: scale(1);
 }
 
+/* Forms 👇 */
+
+.form-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form{
+  grid-column: 1;
+}
+
+.membership{
+  align-self: center;
+}
+
+.np {
+  margin:20px;
+  background-color: #264653;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+
+}
+
+
+
 }
