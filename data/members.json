@@ -5,7 +5,7 @@
         "address": "Rua da Várzea, 123, São Paulo, SP",
         "phone_number": "(11) 1234-5678",
         "website": "https://www.instagram.com/saboresdaterranl/?hl=en",
-        "image": "logo_saboresdaterra.png",
+        "image": "https://play-lh.googleusercontent.com/2MRXUjMV5lGEKTM8bwYftYxtXNa9Jg1bjK6UFIyV50YJJVfTHsBDLPaj3cjFQ_scYe8",
         "membership_level": "bronze",
         "additional_information": "Restaurante familiar com culinária brasileira autêntica e ingredientes frescos da região."
       },
@@ -14,7 +14,7 @@
         "address": "Avenida Brasil, 456, Rio de Janeiro, RJ",
         "phone_number": "(21) 9876-5432",
         "website": "https://ecoenergia.eng.br/",
-        "image": "logo_ecosolucoes.png",
+        "image": "https://static.wixstatic.com/media/afe2c8_fc49ce82dd194c9ca8f5bc8ae8b4717d~mv2.png",
         "membership_level": "silver",
         "additional_information": "Empresa especializada em soluções ecológicas e sustentáveis para empresas e residências."
       },
@@ -23,7 +23,7 @@
         "address": "Rua da Bahia, 789, Belo Horizonte, MG",
         "phone_number": "(31) 3210-9876",
         "website": "https://tecnoarthardware.com.br/",
-        "image": "logo_tecnoart.png",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPK0tJvrI21szSbZav35tmEht1f5Qz-Nqg9g&usqp=CAU",
         "membership_level": "gold",
         "additional_information": "Loja de eletrônicos e informática com grande variedade de produtos e serviços."
       },
@@ -32,7 +32,7 @@
         "address": "Rua das Flores, 1011, Curitiba, PR",
         "phone_number": "(41) 4321-0987",
         "website": "https://revistacasaejardim.globo.com/Casa-e-Jardim/Paisagismo/Plantas/noticia/2021/07/flor-de-mandacaru-conheca-o-cacto-com-flores-que-duram-so-uma-noite.html",
-        "image": "logo_flormandacaru.png",
+        "image": "https://www.ambientelegal.com.br/wp-content/uploads/mandacaru7.jpg",
         "membership_level": "bronze",
         "additional_information": "Loja de artesanato com peças únicas e criativas feitas por artesãos brasileiros."
       },
@@ -41,7 +41,7 @@
         "address": "Rua do Sol, 1213, Salvador, BA",
         "phone_number": "(71) 5678-9012",
         "website": "https://www.instagram.com/deliciadonordeste_/?hl=en",
-        "image": "logo_deliciasdonordeste.png",
+        "image": "https://www.primeiramesa.com.br//storage/gallery_38026500411602a67f195d9f03dcb150.png",
         "membership_level": "silver",
         "additional_information": "Restaurante especializado em culinária nordestina com pratos típicos e saborosos."
       },
@@ -50,7 +50,7 @@
         "address": "Rua da Praia, 1415, Fortaleza, CE",
         "phone_number": "(85) 6789-0123",
         "website": "https://www.belezanatural.com.br/",
-        "image": "logo_belezanatural.png",
+        "image": "https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/155172/regular_beleza.png",
         "membership_level": "gold",
         "additional_information": "Loja de produtos de beleza naturais e orgânicos para todos os tipos de pele e cabelo."
       },
@@ -59,7 +59,7 @@
         "address": "Rua da Música, 1617, Brasília, DF",
         "phone_number": "(61) 7890-1234",
         "website": "https://www.youtube.com/c/somdaterra",
-        "image": "logo_somdaterra.png",
+        "image": "https://cdns-images.dzcdn.net/images/artist/b67dc985ae23bb72aef1e4aaa36d9e81/500x500.jpg",
         "membership_level": "bronze",
         "additional_information": "Loja de instrumentos musicais com grande variedade de instrumentos e acessórios."
       }
