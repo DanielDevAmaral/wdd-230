@@ -351,3 +351,18 @@ color: rgba(0, 0, 0, .3);
 .thankmsg{
   margin: 30px;
 }
+
+
+.companies{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: #14213d;
+  border-radius: 20px;
+}
+
+.companyDiv{
+  border: 1px solid red;
+}
