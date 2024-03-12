@@ -74,6 +74,15 @@ form{
 
 }
 
+.grid{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 }

@@ -364,3 +364,76 @@ color: rgba(0, 0, 0, .3);
 
   color: #fff;
 }
+
+.company img{
+  width: 255px;
+  height: 255px;
+
+  border-radius: 16px;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid div {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid div > * {
+	margin: 0.1rem;
+}
+
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list main{
+	display: flex;
+	flex-direction: column;
+}
+
+.list div {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+  border-radius: 0%;
+
+  align-items: center;
+}
+
+.list div > * {
+	margin: 0 1rem;
+}
+
+.list div img {
+	display: none; /* smaller viewports only */
+}
+
+.list div h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list div:nth-child(even) {
+	background-color: #264653;
+  border-radius: 0%;
+}
+
+div.menu{
+  text-align-last: center;
+  margin: 20px;
+}
