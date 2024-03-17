@@ -23,64 +23,8 @@ async function apiFetch() {
   }
 }
 
-async function apiForecast() {
-  try {
-    const response = await fetch(urlForecast);
-    if (response.ok) {
-      const data = await response.json();
-      const targetDates = getNextThreeDates(); // Function to get next 3 days
-      const temperatureData = getTemperatureForDates(data, targetDates);
 
-      // Clear previous content in the "threeDays" div
-      threeDays.innerHTML = '';
 
-      // Create and append <p> elements for each day and temperature
-      temperatureData.forEach(({ date, temperature }) => {
-        const dateElement = document.createElement('p');
-        const tempElement = document.createElement('p');
-
-        dateElement.textContent = `\n${date}:`;
-        tempElement.textContent = `${temperature}F°`;
-
-        threeDays.appendChild(dateElement);
-        threeDays.appendChild(tempElement);
-      });
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.error(error);
-    // Handle the error here, like displaying an error message to the user
-  }
-}
-
-function getNextThreeDates() {
-  const currentDate = new Date();
-  const nextThreeDates = [];
-  for (let i = 1; i <= 3; i++) {
-    const date = new Date(currentDate);
-    date.setDate(date.getDate() + i);
-    nextThreeDates.push(date.toISOString().slice(0, 10)); // Get YYYY-MM-DD format
-  }
-  return nextThreeDates;
-}
-
-function getTemperatureForDates(apiData, targetDates) {
-  const temperatureData = [];
-  let count = 0;
-  for (const item of apiData.list) {
-    const dateStr = item.dt_txt.split(' ')[0]; // Extract date part
-    if (targetDates.includes(dateStr)) {
-      temperatureData.push({
-        date: dateStr,
-        temperature: item.main.temp
-      });
-      count++;
-      if (count === 3) break; // Break the loop after 3 days' data
-    }
-  }
-  return temperatureData;
-}
 
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`;
