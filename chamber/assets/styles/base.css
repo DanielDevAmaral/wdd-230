@@ -27,6 +27,10 @@ header h1 {
   padding-left: 2%;
 }
 
+.cta{
+  display: flex;
+}
+
 #menu {
   position: absolute;
   border: none;
@@ -437,3 +441,37 @@ div.menu{
   text-align-last: center;
   margin: 20px;
 }
+
+/* discovery page */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  /* Main Content */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-content img {
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    /* Mobile View - Single Column Layout */
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }

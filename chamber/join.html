@@ -1,184 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/medium.css" />
-    <link rel="stylesheet" href="assets/styles/larger.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/images/favicon.ico" />
+<head>
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/medium.css">
+  <link rel="stylesheet" href="assets/styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <meta property="og:image" content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg">
+  <meta property="og:title" content="Aracaju Chamber of Commerce">
+  <meta property="og:type" content="Chamber of Commerce">
+  <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/">
+  <meta name="author" content="Daniel Leite Amaral">
+  <meta name="description" content="Chamber of Commerce">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Aracaju Chamber of Commerce</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="top">
+    <h1 class="name-logo" style="align-self: center; padding: 0.5rem">Aracaju Chamber</h1>
+    <button id="menu"></button>
+    <nav class="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="chamber/">Directory</a>
+    </nav>
+    <!--Switch test -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <!--Switch test -->
+    <section class="cta">
+      <a href="#" class="join-button">Join Now</a>
+    </section>
+  </header>
 
-    <meta
-      property="og:image"
-      content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg"
-    />
-    <meta property="og:title" content="Aracaju Chamber of Commerce" />
-    <meta property="og:type" content="Chamber of Commerce" />
-    <meta
-      property="og:url"
-      content="https://danieldevamaral.github.io/wdd230/"
-    />
-    <meta name="author" content="Daniel Leite Amaral" />
-    <meta name="description" content="Chamber of Commerce" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-
-    <title>Aracaju Chamber of Commerce</title>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="top">
-      <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
-        Aracaju Chamber
-      </h1>
-
-      <button id="menu"></button>
-
-      <nav class="navigation">
-        <a href="#" class="active">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="chamber/">Directory</a>
-      </nav>
-
-      <!--Switch test -->
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <!--Switch test -->
-      <section class="cta">
-        <a href="#" class="join-button">Join Now</a>
-      </section>
-    </header>
-
-    <main class="form-main">
-      <div id="formmessage"></div>
-
-      <form action="thankyou.html">
-        <h2>Join in the Chamber</h2>
-
-        <label for="firstname" class="req">First name:</label>
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          required
-        /><br /><br />
-
-        <label for="lastname" class="req">Last name:</label>
-        <input type="text" id="lastname" name="lastname" required /><br /><br />
-
-        <label for="position" class="req">Position:</label>
-        <input
-          type="text"
-          id="position"
-          name="position"
-          pattern="[A-Za-z0-9\sa-c]{7,}"
-          required
-        /><br /><br />
-
-        <label for="phone" class="req">Phone number:</label>
-        <input type="telephone" id="phone" name="phone" required /><br /><br />
-
-        <label for="organization" class="req">Organization's name:</label>
-        <input
-          type="text"
-          id="organization"
-          name="organization"
-          required
-        /><br /><br />
-
-        <!-- 👇 Options -->
-        <label for="membership" class="req">Membership level:</label>
-
-        <div class="optionscheck">
-          <input type="radio" id="css" name="fav_language" value="CSS" />
-          <label for="html"
-            >NP Membership is for non profit organizations and there is no
-            fee</label
-          ><br /><br />
-          <input type="radio" id="css" name="fav_language" value="CSS" />
-
-          <label for="css">Bronze Membership</label><br /><br />
-          <input
-            type="radio"
-            id="javascript"
-            name="fav_language"
-            value="JavaScript"
-          />
-
-          <label for="javascript">Silver Membership</label><br /><br />
-          <input
-            type="radio"
-            id="javascript"
-            name="fav_language"
-            value="JavaScript"
-          />
-
-          <label for="javascript">Gold Membership</label><br /><br />
-        </div>
-        <!-- END Options -->
-
-        <label for="description" class="req">Organization description:</label>
-        <textarea id="description" name="description" rows="5" cols="33">
-Tell us something about your Organization...
-        </textarea
-        ><br /><br />
-
-        <input type="hidden" name="hidden" id="hidden" />
-
-        <button id="btnSubmit" type="submit">Join</button>
-      </form>
-
-      <div class="membership">
-        <div class="np">
-          <h2>NP Membership</h2>
-          <p>$0</p>
-          <p>Access to basic resources and updates</p>
-        </div>
-        <div class="np">
-          <h2>Bronze Membership</h2>
-          <p>$100</p>
-          <p>
-            * Discounted event registration * Ability to connect with other
-            members through online forums or communities
-          </p>
-        </div>
-        <div class="np">
-          <h2>Silver Membership</h2>
-          <p>$200</p>
-          <p>
-            * Benefits of Bronze Membership * Free training webinars or
-            workshops * Priority access to customer support
-          </p>
-        </div>
-        <div class="np">
-          <h2>Gold Membership</h2>
-          <p>$300</p>
-          <p>
-            * Benefits of Silver Membership * Homepage spotlight position for
-            your organization * Invitation to exclusive events or galas *
-            Recognition in annual report
-          </p>
-        </div>
+  <main class="form-main">
+    <div id="formmessage"></div>
+    <form action="thankyou.html">
+      <h2>Join in the Chamber</h2>
+      <label for="firstname" class="req">First name:</label>
+      <input type="text" id="firstname" name="firstname" required><br><br>
+      <label for="lastname" class="req">Last name:</label>
+      <input type="text" id="lastname" name="lastname" required><br><br>
+      <label for="position" class="req">Position:</label>
+      <input type="text" id="position" name="position" pattern="[A-Za-z0-9\sa-c]{7,}" required><br><br>
+      <label for="phone" class="req">Phone number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="mail" class="req">Your Best e-mail:</label>
+      <input type="email" id="mail" name="mail" required><br><br>
+      <label for="organization" class="req">Organization's name:</label>
+      <input type="text" id="organization" name="organization" required><br><br>
+      <!-- Options -->
+      <label for="membership" class="req">Membership level:</label>
+      <div class="optionscheck">
+        <input type="radio" id="np" name="fav_language" value="NP">
+        <label for="np">NP Membership is for non profit organizations and there is no fee</label><br><br>
+        <input type="radio" id="bronze" name="fav_language" value="Bronze">
+        <label for="bronze">Bronze Membership</label><br><br>
+        <input type="radio" id="silver" name="fav_language" value="Silver">
+        <label for="silver">Silver Membership</label><br><br>
+        <input type="radio" id="gold" name="fav_language" value="Gold">
+        <label for="gold">Gold Membership</label><br><br>
       </div>
-    </main>
+      <!-- End Options -->
+      <label for="description" class="req">Organization description:</label>
+      <textarea id="description" name="description" rows="5" cols="33" required>
+Tell us something about your Organization...
+      </textarea><br><br>
+      <input type="hidden" name="hidden" id="hidden">
+      <button id="btnSubmit" type="submit">Join</button>
+    </form>
+    <div class="membership">
+      <div class="np">
+        <h2>NP Membership</h2>
+        <p>$0</p>
+        <p>Access to basic resources and updates</p>
+      </div>
+      <div class="bronze">
+        <h2>Bronze Membership</h2>
+        <p>$100</p>
+        <p>
+          * Discounted event registration * Ability to connect with other members through online forums or communities
+        </p>
+      </div>
+      <div class="silver">
+        <h2>Silver Membership</h2>
+        <p>$200</p>
+        <p>
+          * Benefits of Bronze Membership * Free training webinars or workshops * Priority access to customer support
+        </p>
+      </div>
+      <div class="gold">
+        <h2>Gold Membership</h2>
+        <p>$300</p>
+        <p>
+          * Benefits of Silver Membership * Homepage spotlight position for your organization * Invitation to exclusive events or galas * Recognition in annual report
+        </p>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-      <img class="logo" src="assets/images/logo.webp" alt="" />
-      <p id="currentYear"></p>
-      <p id="lastModified"></p>
-    </footer>
+  <footer>
+    <img class="logo" src="assets/images/logo.webp" alt="logo">
+    <p id="currentYear"></p>
+    <p id="lastModified"></p>
+  </footer>
 
-    <script src="assets/scripts/loadtime.js"></script>
-    <script src="assets/scripts/windchill.js"></script>
-    <script src="assets/scripts/switch.js"></script>
-    <script src="assets/scripts/getdates.js"></script>
-    <script src="assets/scripts/menu.js"></script>
-  </body>
+  <script src="assets/scripts/loadtime.js"></script>
+  <script src="assets/scripts/switch.js"></script>
+  <script src="assets/scripts/getdates.js"></script>
+  <script src="assets/scripts/menu.js"></script>
+</body>
 </html>

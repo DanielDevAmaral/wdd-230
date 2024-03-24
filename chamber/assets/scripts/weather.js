@@ -33,4 +33,4 @@ function displayResults(data) {
 }
 
 apiFetch();
-apiForecast();
+
