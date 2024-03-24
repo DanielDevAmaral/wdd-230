@@ -156,6 +156,25 @@ main h2{
 .card li{
     padding-bottom: 12px;
 }
+
+
+.weather_block
+{
+    display: grid;
+    justify-items: center;
+}
+.weather_temp,
+.weather_icon,
+.weather_desc{
+    margin: 2px;
+    justify-items: center;
+
+}
+
+.weather_icon{
+    justify-self: center;
+}
+
 .card ul {
     list-style-type: none;
   }
