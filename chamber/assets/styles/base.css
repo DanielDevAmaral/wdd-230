@@ -245,7 +245,7 @@ iframe{
 
 .div-weather{ 
   grid-column: 2;
-  display: inline-flexbox;
+  display: block; 
   justify-content: center;
   align-items: center;
 }
@@ -409,7 +409,7 @@ button {
   padding-right: 20px;
   text-align: center;
   touch-action: manipulation;
-  transition: background-color 0.167s var(--sec-color);
+  transition: background-color 0.167s, color 0.167s var(--sec-color);
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
