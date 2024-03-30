@@ -42,7 +42,7 @@
         }
 
         .cta{
-                display: none;
+                display: flex;
                 grid-row: 1;
                 grid-column: 3/4;
                 align-self: center;

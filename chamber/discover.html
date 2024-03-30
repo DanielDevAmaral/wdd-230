@@ -1,136 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/medium.css" />
-    <link rel="stylesheet" href="assets/styles/larger.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/images/favicon.ico" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/styles/normalize.css" />
+  <link rel="stylesheet" href="assets/styles/base.css" />
+  <link rel="stylesheet" href="assets/styles/medium.css" />
+  <link rel="stylesheet" href="assets/styles/larger.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/images/favicon.ico" />
 
-    <meta
-      property="og:image"
-      content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg"
-    />
-    <meta property="og:title" content="Aracaju Chamber of Commerce" />
-    <meta property="og:type" content="blog" />
-    <meta
-      property="og:url"
-      content="https://danieldevamaral.github.io/wdd230/"
-    />
-    <meta name="author" content="Daniel Leite Amaral" />
-    <meta name="description" content="Chamber of Commerce" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg" />
+  <meta property="og:title" content="Aracaju Chamber of Commerce" />
+  <meta property="og:type" content="Chamber of Commerce" />
+  <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/" />
+  <meta name="author" content="Daniel Leite Amaral" />
+  <meta name="description" content="Chamber of Commerce" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Aracaju Chamber of Commerce - Discover</title>
+</head>
 
-    <title>Aracaju Chamber of Commerce - Discover</title>
-  </head>
+<body>
+  <header class="top">
+    <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
+      Aracaju Chamber of Commerce
+    </h1>
 
-  <body>
+    <button id="menu"></button>
 
+    <nav class="navigation">
+      <a href="/chamber/index.html" class="active">Home</a>
+      <a href="#">Discover</a>
+      <a href="directory.html">Directory</a>
+    </nav>
 
-    <!-- CSS -->
-    <style>
-      /* Grid Layout */
-      .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-gap: 20px;
-        padding: 20px;
-      }
+    <!--Switch test -->
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <!--Switch test -->
+    <section class="cta">
+      <a href="/chamber/join.html" class="join-button">Join Now</a>
+    </section>
+  </header>
+  <div class="grid-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <p id="visit-message"></p>
 
-      /* Sidebar */
-      .sidebar {
-        background-color: #f0f0f0;
-        padding: 10px;
-      }
+      <h2>Best Hotels</h2>
+      <p>
+        Here we will talk about and show you the best hotels of Aracaju/SE
+      </p>
 
-      /* Main Content */
-      .main-content {
-        display: flex;
-        flex-wrap: wrap;
-      }
+      <h2>Last News</h2>
+      <p>Political conflicts make the money cheap, understand why</p>
 
-      .main-content img {
-        width: 100%;
-        margin-bottom: 10px;
-        transition: transform 0.3s ease;
-      }
-
-      @media (max-width: 768px) {
-        /* Mobile View - Single Column Layout */
-        .grid-container {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-
-    <header class="top">
-      <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
-        Aracaju Chamber of Commerce
-      </h1>
-
-      <button id="menu"></button>
-
-      <nav class="navigation">
-        <a href="/chamber/index.html" class="active">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Discover</a>
-        <a href="chamber/">Directory</a>
-      </nav>
-
-      <!--Switch test -->
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <!--Switch test -->
-      <section class="cta">
-        <a href="/chamber/join.html" class="join-button">Join Now</a>
-      </section>
-    </header>
-    <!-- HTML -->
-    <div class="grid-container">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <p id="visit-message"></p>
-
-        <h2>Best Hotels</h2>
-        <p>
-          He we will talk about and show to you the best hotels of Aracaju/SE
-        </p>
-
-        <h2>Last News</h2>
-        <p>Politic conflicts make the money cheap, understand why</p>
-
-        <h2>Events</h2>
-        <p>Ivete Sangalo sings "Macetando" for 5.000 people in this weekend</p>
-      </div>
-
-      <div class="main-content">
-        <img loading="lazy" src="assets/images/city1.webp" alt="City 1" />
-        <img loading="lazy" src="assets/images/city2.webp" alt="City 2" />
-        <img loading="lazy" src="assets/images/city3.webp" alt="City 3" />
-        <img loading="lazy" src="assets/images/city4.webp" alt="City 4" />
-        <img loading="lazy" src="assets/images/city5.webp" alt="City 5" />
-        <img loading="lazy" src="assets/images/city6.webp" alt="City 6" />
-      </div>
+      <h2>Events</h2>
+      <p>Ivete Sangalo sings "Macetando" for 5,000 people this weekend</p>
     </div>
 
-    <footer>
-      <img class="logo" src="assets/images/logo.webp" alt="" />
-      <p id="currentYear"></p>
-      <p id="lastModified"></p>
-    </footer>
+    <div class="main-content">
+      <img loading="lazy" src="assets/images/city1.webp" alt="City 1" />
+      <img loading="lazy" src="assets/images/city2.webp" alt="City 2" />
+      <img loading="lazy" src="assets/images/city3.webp" alt="City 3" />
+      <img loading="lazy" src="assets/images/city4.webp" alt="City 4" />
+      <img loading="lazy" src="assets/images/city5.webp" alt="City 5" />
+      <img loading="lazy" src="assets/images/city6.webp" alt="City 6" />
+    </div>
+  </div>
 
-    <script src="assets/scripts/lastvisit.js"></script>
-    <script src="assets/scripts/switch.js"></script>
-    <script src="assets/scripts/getdates.js"></script>
-    <script src="assets/scripts/menu.js"></script>
-  </body>
+  <footer>
+    <img class="logo" src="assets/images/logo.webp" alt="" />
+    <p id="currentYear"></p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="assets/scripts/lastvisit.js"></script>
+  <script src="assets/scripts/switch.js"></script>
+  <script src="assets/scripts/getdates.js"></script>
+  <script src="assets/scripts/menu.js"></script>
+</body>
 </html>

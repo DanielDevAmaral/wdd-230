@@ -23,15 +23,14 @@ async function apiFetch() {
     // Handle the error here, like displaying an error message to the user
   }
 }
-
+//weather[0].idweather[0].description
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   weatherIcon.setAttribute('alt', `${data.weather[0].main}`);
-  weatherIcon.setAttribute('scr', iconsrc);
-  captionDesc.textContent = `${desc}`;
+  weatherIcon.setAttribute('src', iconsrc);
+  captionDesc.textContent = `${data.main.temp}&deg;F - ${desc}`;
 }
 
 apiFetch()
