@@ -409,7 +409,7 @@ button {
   padding-right: 20px;
   text-align: center;
   touch-action: manipulation;
-  transition: background-color 0.167s, color 0.167s var(--sec-color);
+  transition: background-color 0.167s, color 0.167s;
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
@@ -548,6 +548,17 @@ div.menu{
     width: 100%;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
+  }
+
+  .sidebar{
+    background-color: #e9c46a;
+    border-bottom: 0px;
+    border-width: 1px;
+    border-radius: 10px;
+    color: #1a3947;
+    font-size: 18px;
+    padding: 15px 15px;
+    margin-top: 18px;
   }
 
   @media (max-width: 768px) {
