@@ -114,18 +114,30 @@
 
 form{
   grid-column: 1;
+  margin:20px;
+  background-color: #264653;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+
+}
+
+#btnSubmit{
+  background-color: #e9c46a;
+  color: #264653;
+  font-weight: bold;
 }
 
 .membership{
   align-self: center;
 }
 
-.np {
+.np, .bronze, .silver, .gold {
   margin:20px;
-  background-color: #264653;
+  background-color: #e9c46a;
   padding: 20px;
   border-radius: 15px;
-  color: #fff;
+  color: #264653;
 
 }
 
