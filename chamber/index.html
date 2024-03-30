@@ -1,86 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="assets/styles/normalize.css" />
-  <link rel="stylesheet" href="assets/styles/base.css" />
-  <link rel="stylesheet" href="assets/styles/medium.css" />
-  <link rel="stylesheet" href="assets/styles/larger.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="assets/images/favicon.ico" />
+  <head>
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/medium.css" />
+    <link rel="stylesheet" href="assets/styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon.ico" />
 
-  <meta property="og:image" content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg" />
-  <meta property="og:title" content="Aracaju Chamber of Commerce" />
-  <meta property="og:type" content="Chamber of Commerce" />
-  <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/" />
-  <meta name="author" content="Daniel Leite Amaral" />
-  <meta name="description" content="Chamber of Commerce" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
+    <meta
+      property="og:image"
+      content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg"
+    />
+    <meta property="og:title" content="Aracaju Chamber of Commerce" />
+    <meta property="og:type" content="Chamber of Commerce" />
+    <meta
+      property="og:url"
+      content="https://danieldevamaral.github.io/wdd230/"
+    />
+    <meta name="author" content="Daniel Leite Amaral" />
+    <meta name="description" content="Chamber of Commerce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
-  <title>Aracaju Chamber of Commerce</title>
-</head>
-<body>
-  <!-- Header Section --> 
-  <header class="top">
-    <h1 class="name-logo" style="align-self: center; padding: 0.5rem;">Aracaju Chamber</h1>
+    <title>Aracaju Chamber of Commerce</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="top">
+      <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
+        Aracaju Chamber
+      </h1>
 
-    <button id="menu"></button>
+      <button id="menu"></button>
 
-    <nav class="navigation">
-      <a href="#" class="active">Home</a>
-      <a href="discover.html">Discover</a>
-      <a href="chamber/">Directory</a>
-    </nav>
+      <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="chamber/">Directory</a>
+        <a href="/chamber/join.html" class="join-button">Join Now</a>
+      </nav>
 
-    <!--Switch test -->
-    <label class="switch">
-      <input type="checkbox" >
-      <span class="slider round"></span>
-    </label>
-    <!--Switch test -->
-    <section class="cta">
-      <a href="/chamber/join.html" class="join-button">Join Now</a>
-    </section>
-  </header>
+      <!--Switch test -->
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <!--Switch test -->
+    </header>
 
-  <div class="hero-image">
-    <picture>
-      <source srcset="assets/images/hero-small.webp" media="(max-width:500px)">
-      <source srcset="assets/images/hero-medium.webp" media="(max-width:768px)">
-      <img src="assets/images/hero-large.webp" alt="people talking" style="width: 100%;">
-    </picture>
-  </div>
-
-  <main>
-    <section class="card-events">
-      <h3>Current Events</h3>
-    </section>
-
-    <section class="card-weather">
-      <h3>Weather Forecast</h3>
-      <div class="body-weather">
-        <p>Temperature:</p> <input placeholder="lower or equal 50°F" class="temp" type="number">
-        <p>Windspeed</p> <input placeholder="higher 3.0mph" class="wind" type="number">
-        <button id="calculate">Calculate Windchill</button>
-        <p>Windchill</p>
-        <p class="windchill"></p>
+    <div class="hero-image">
+      <picture>
+        <source
+          srcset="assets/images/Aracaju_small.webp"
+          media="(max-width:500px)"
+        />
+        <source
+          srcset="assets/images/Aracaju_medium.webp"
+          media="(max-width:768px)"
+        />
+        <img
+          src="assets/images/Aracaju.webp"
+          alt="people talking"
+          style="width: 100%"
+        />
+      </picture>
+      <div class="hero-label">
+        <h2>Welcome to the Aracaju Chamber of Commerce</h2>
+        <p>Discovery new way to share your brand, join us.</p>
+        <a href="/chamber/join.html" class="join-button">Join Now</a>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <div class="spotlights">
-    <h3 class="mobile-spotlight">Member Spotlights</h3>
-    <div class="spotlights-cards">
-      <section class="card-company">
-        <h3>Weather</h3>
-        <div class="weather-api">
-          <p class="currentTemp"></p>
-          <p class="tempDesc"></p>
+    <main>
+      <section class="card-events">
+        <h3>Current Events</h3>
+        <picture class="Event">
+          <source
+            srcset="assets/images/Event_small.webp"
+            media="(max-width:500px)"
+          />
+          <source
+            srcset="assets/images/Event_medium.webp"
+            media="(max-width:768px)"
+          />
+          <img src="assets/images/Event.webp" alt="Event" />
+        </picture>
+        <div class="event-label">
+          <h2>Startup Day Aracaju</h2>
+          <p>
+            Discovery how to start a new bussiness with tech and innovation.
+          </p>
         </div>
-        <div class="threeDays"></div>
       </section>
+
+      <section class="card-weather">
+        <h3>Weather Forecast</h3>
+        <div class="forecast">
+          <div class="weather-api"></div>
+          <div class="threeDays"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="spotlights">
+      <h3 class="mobile-spotlight">Member Spotlights</h3>
+
+      <div class="spotlights-cards">
+        <section class="card-company">
+          <h3>Voice of the Month</h3>
+          <picture class="VOFTM">
+            <source
+              srcset="assets/images/Sheldon_small.webp"
+              media="(max-width:500px)"
+            />
+            <source
+              srcset="assets/images/Sheldon_medium.webp"
+              media="(max-width:768px)"
+            />
+            <img src="assets/images/Sheldon.webp" alt="VOFTM" />
+          </picture>
+          <p>
+            "People say you can't live without love, I think oxygen is more
+            important."
+          </p>
+          <p>Sheldon Cooper</p>
+
+        </section>
 
         <section class="card-company">
           <h3>City Map</h3>
@@ -93,21 +144,30 @@
         </section>
 
         <section class="card-company">
-          <h3>Scripture of the Day</h3>
+          <h3>Photo of the Week</h3>
+          <div>
+            <picture class="VOFTM">
+              <source
+                srcset="assets/images/VOFTM_small.webp"
+                media="(max-width:500px)"
+              />
+              <img src="assets/images/VOFTM_medium.webp" alt="VOFTM" />
+            </picture>
+          </div>
         </section>
       </div>
     </div>
 
-  <footer>
-    <img class="logo" src="assets/images/logo.webp" alt="Logo" />
-    <p id="currentYear"></p>
-    <p id="lastModified"></p>
-  </footer>
+    <footer>
+      <img class="logo" src="assets/images/logo.webp" alt="Logo" />
+      <p id="currentYear"></p>
+      <p id="lastModified"></p>
+    </footer>
 
-  <script src="assets/scripts/weather.js"></script>
-  <script src="assets/scripts/windchill.js"></script>
-  <script src="assets/scripts/switch.js"></script>
-  <script src="assets/scripts/getdates.js"></script>
-  <script src="assets/scripts/menu.js"></script>
-</body>
+    <script src="assets/scripts/weather.js"></script>
+    <script src="assets/scripts/windchill.js"></script>
+    <script src="assets/scripts/switch.js"></script>
+    <script src="assets/scripts/getdates.js"></script>
+    <script src="assets/scripts/menu.js"></script>
+  </body>
 </html>

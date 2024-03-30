@@ -1,4 +1,5 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 768px){
+
 
 
         header {
@@ -54,6 +55,65 @@
                 color: white;
         }
 
+        .hero-label{
+                position: absolute;
+                top: 230px;
+                left: 48px;
+                background-color: #f6feff88;
+                color: #14213d;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem;
+                border-radius: 10px;
+              }
+
+        .hero-label a {
+                background-color: #14213d;
+                color: #f0dda8;
+                border: 0;
+                padding: 0.7rem 2rem;
+                text-decoration: none;
+                width: fit-content;
+                display:block;
+              }
+
+        .event-label {
+                position: absolute;
+                top: 800px;
+                left: 48px;
+                color: #14213d;
+                background-color: rgb(233, 196, 106, 0.7);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                border-radius: 10px;
+            
+              }
+
+        .div-weather{
+                margin: 0 auto;
+        }
+
+        .VOFTM{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        
+        iframe{
+                height: auto;
+                width: 95%;
+                border-radius: 20px;
+                margin-bottom: 18px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+
+}
 
 
-}       
+
