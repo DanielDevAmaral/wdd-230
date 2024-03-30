@@ -2,6 +2,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+:root{
+  --font: "Raleway", sans-serif;
+  --sec-color: #e9c46a;
+  
+}
+
 body{
     background-color: rgb(238, 238, 238);;
 }
@@ -123,7 +129,6 @@ header h1 {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -136,10 +141,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
 
 /* Rounded sliders */
 .slider.round {
