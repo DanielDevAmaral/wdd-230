@@ -563,6 +563,35 @@ div.menu{
     margin-top: 18px;
   }
 
+  form{
+    grid-column: 1;
+    margin:20px;
+    background-color: #264653;
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+  
+  }
+  
+  #btnSubmit{
+    background-color: #e9c46a;
+    color: #264653;
+    font-weight: bold;
+  }
+  
+  .membership{
+    align-self: center;
+  }
+  
+  .np, .bronze, .silver, .gold {
+    margin:20px;
+    background-color: #e9c46a;
+    padding: 20px;
+    border-radius: 15px;
+    color: #264653;
+  
+  }
+
   @media (max-width: 768px) {
     /* Mobile View - Single Column Layout */
     .grid-container {
