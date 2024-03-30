@@ -444,7 +444,7 @@ color: rgba(0, 0, 0, .3);
   margin: 30px;
   padding: 20px;
 
-  background-color: #14213d;
+  background-color: #264653;
   border-radius: 20px;
 
   color: #fff;
@@ -513,9 +513,12 @@ color: rgba(0, 0, 0, .3);
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-.list div:nth-child(even) {
-	background-color: #264653;
+.list div:nth-child(2n+1) {
+	background-color: #e9c46a;
+  color: #14213d;
   border-radius: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 div.menu{
