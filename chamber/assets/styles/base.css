@@ -17,8 +17,7 @@ header {
 }
 
 .logo {
-  width: 50px;
-  display: inline-flex;
+  width: 20%;
 }
 header h1 {
   display: inline-flex;
@@ -166,11 +165,8 @@ main{
 }
 
 .hero-label{
-  position: absolute;
-  top: 210px;
-  left: 20px;
-  background-color: #f6feff88;
-  color: #14213d;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -183,17 +179,11 @@ main{
 }
 
 .event-label {
-  position: absolute;
-  top: 624px;
-  left: 35px;
   color: #14213d;
-  background-color: rgb(233, 196, 106, 0.7);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  border-radius: 10px;
-
 }
 
 iframe{
@@ -325,17 +315,20 @@ input[type=number] {
 }
 
 
-
+#lastModified{
+  text-align: -webkit-center;
+}
 
 footer {
   background-color: #264653;
   color: white;
   text-align-last: center;
   display: flex;
+  align-items: center;
 }
 
 .flag {
-  width: 2%;
+  width: 6%;
 }
 
 
