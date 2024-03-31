@@ -46,10 +46,6 @@ header h1 {
   right: 0;
 }
 
-.top{
-  gap: 50px;
-}
-
 #menu::before { 
   content: "≡";
 }
