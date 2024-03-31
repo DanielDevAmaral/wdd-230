@@ -46,6 +46,10 @@ header h1 {
   right: 0;
 }
 
+.top{
+  gap: 90px;
+}
+
 #menu::before { 
   content: "≡";
 }
@@ -62,8 +66,9 @@ header h1 {
   display: flex;
   flex-direction: column;
   list-style: none;
-  background-color: black;
+  background-color: #264653;
   color: #fff;
+  
 }
 
 .navigation a {
@@ -72,9 +77,9 @@ header h1 {
   text-align: center;
   text-decoration: none;
   color: #fff;
-}
+}a
 
-.navigation a:hover {
+.navigation :hover {
   color: #14213d;
   background-color: rgba(255, 255, 255, 0.8);
 }
