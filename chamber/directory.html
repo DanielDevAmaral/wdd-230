@@ -1,79 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/medium.css" />
-    <link rel="stylesheet" href="assets/styles/larger.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/images/favicon.ico" />
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/medium.css">
+  <link rel="stylesheet" href="assets/styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.ico">
 
-    <meta
-      property="og:image"
-      content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg"
-    />
-    <meta property="og:title" content="Aracaju Chamber of Commerce" />
-    <meta property="og:type" content="Chamber of Commerce" />
-    <meta
-      property="og:url"
-      content="https://danieldevamaral.github.io/wdd230/"
-    />
-    <meta name="author" content="Daniel Leite Amaral" />
-    <meta name="description" content="Chamber of Commerce" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
+  <meta property="og:image" content="https://www.sergipeturismo.com/wp-content/uploads/2017/06/mercado-municipal-de-aracaju.jpg">
+  <meta property="og:title" content="Aracaju Chamber of Commerce">
+  <meta property="og:type" content="Chamber of Commerce">
+  <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/">
+  <meta name="author" content="Daniel Leite Amaral">
+  <meta name="description" content="Chamber of Commerce">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
-    <title>Aracaju Chamber of Commerce</title>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="top">
-      <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
-        Aracaju Chamber of Commerce
-      </h1>
+  <title>Aracaju Chamber of Commerce</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="top">
+    <h1 class="name-logo" style="align-self: center; padding: 0.5rem">
+      Aracaju Chamber of Commerce
+    </h1>
+    <button id="menu"></button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="#" class="active">Directory</a>
+      <a href="join.html" class="join-button">Join Now</a>
+    </nav>
+    <!-- Switch test -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </header>
 
-      <button id="menu"></button>
+  <div class="menu">
+    <button id="grid">⏹️Grid</button>
+    <button id="list">📄List</button>
+  </div>
 
-      <nav class="navigation">
-        <a href="index.html" >Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="#" class="active">Directory</a>
-        <a href="join.html" class="join-button">Join Now</a>
+  <article>
+    <main></main>
+  </article>
 
-      </nav>
+  
 
-      <!--Switch test -->
-      <label class="switch">
-        <input type="checkbox"/>
-        <span class="slider round"></span>
-      </label>
+  <footer>
+    <img class="logo" src="assets/images/logo.webp" alt="Logo">
+    <p id="currentYear"></p>
+    <p id="lastModified"></p>
+  </footer>
 
-    </header>
-
-    <div class="menu">
-      <button id="grid">⏹️Grid</button>
-      <button id="list">📄List</button>
-    </div>
-
-    <article>
-      <main></main>
-    </article>
-
-    <footer>
-      <img class="logo" src="assets/images/logo.webp" alt="Logo" />
-      <p id="currentYear"></p>
-      <p id="lastModified"></p>
-    </footer>
-
-    <script src="assets/scripts/switch.js"></script>
-    <script src="assets/scripts/getdates.js"></script>
-    <script src="assets/scripts/menu.js"></script>
-    <script src="assets/scripts/members.js"></script>
-    <script src="assets/scripts/grid.js"></script>
-  </body>
+  <script src="assets/scripts/switch.js"></script>
+  <script src="assets/scripts/getdates.js"></script>
+  <script src="assets/scripts/menu.js"></script>
+  <script src="assets/scripts/members.js"></script>
+  <script src="assets/scripts/grid.js"></script>
+</body>
 </html>
