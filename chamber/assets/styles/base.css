@@ -14,6 +14,7 @@ body{
 header {
   background-color: #264653;
   display: flex;
+  gap: 14px;
 }
 
 .logo {
@@ -326,6 +327,10 @@ footer {
   text-align-last: center;
   display: flex;
   align-items: center;
+}
+
+#currentYear{
+  margin: 0 auto;
 }
 
 .flag {
