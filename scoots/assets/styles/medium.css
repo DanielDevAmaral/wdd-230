@@ -70,11 +70,12 @@
 
     .api{
         display: flex;
-        padding: 18px;
+        padding: 2em;
+        
     }
 
-    .api div{
-        width: 100%;
+    .api .temp{
+        width: 70%;
     }
 
     /* weather ☝️ */
