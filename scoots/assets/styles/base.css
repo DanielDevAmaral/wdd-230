@@ -94,6 +94,10 @@ header{
 
 /* Hero ☝️ */
 
+.text-home{
+    display: none;
+}
+
 .weather{
     background-color: #032558;
     padding: 20px;
