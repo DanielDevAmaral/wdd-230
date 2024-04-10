@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --primary-color: #032558;
+    --secundary-color: #F4BC33;
+    --third-color: #808080;
+
+    --font-official: "Lato", sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--font-official);
+    display: flex;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.mobile{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.mobile::before{
+    content: "≡";
+}
+
+.mobile.open::before{
+    content: "✖";
+}
+
+.link{
+    display: none;
+}
+
+.link.open{
+    display: block;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 118px; 
+    right: -18px;
+    background-color: var(--primary-color); 
+    padding: 10px; 
+    width: 100%;
+}
+
+.link.open a{
+    display: block;
+    padding: 10px;
+    margin: 5px; 
+    text-decoration: none;
+    color: white;
+}
+
+.link.open a:hover{
+    background-color: var(--third-color);
+}
+
+/* Barra de Navegação ☝️ */
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-call{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 24px;
+    padding: 20px;
+    line-height: 1.4em;
+}
+
+/* Hero ☝️ */
+
+.weather{
+    background-color: #032558;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: -webkit-center;
+    color: white;
+}
+
+.weather img{
+    width: 25%;
+}
+
+
