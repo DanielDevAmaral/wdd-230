@@ -1,5 +1,29 @@
 @media screen and (min-width: 1024px){
+    .hero-image img{
+        height: 470px;
+        object-fit: cover;
+    }
+
     .hero-special{
-        top: 470px;
+        margin: 136px;
+        top: 34px;
+        left: 200px;
+    }
+
+    .forecast img{
+        width: 14%;
+    }
+
+    .weather img{
+        width: 14%;
+    }
+
+    th, td{
+        font-size: x-large;
+    }
+
+    .rent-button{
+        font-size: x-large;
     }
 }
+

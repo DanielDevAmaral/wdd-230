@@ -102,7 +102,6 @@ function getWeatherForTomorrow(weatherData) {
     baseforecast.appendChild(foreicon);
     baseforecast.appendChild(foretemperature);
     baseforecast.appendChild(foredescription);
-    baseforecast.appendChild(forehumidity);
   }
 }
 
