@@ -118,6 +118,28 @@
         font-size: medium;
     }
 
+    /* table ☝️ */
+
+    .form-rental{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 25px;
+        gap: 30px;
+    }
+    
+    .agreedments{
+        background-color: var(--primary-color);
+        color: white;
+        padding: 20px;
+        grid-column: 2;
+    }
+    
+    li{
+        padding-bottom: 30px;
+    }
+
+    /* form ☝️ */
+
 
 
 }

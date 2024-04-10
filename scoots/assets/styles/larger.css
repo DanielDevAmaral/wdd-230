@@ -16,6 +16,13 @@
         display: none;
     }
 
+    .welcome{
+        display: block;
+        text-align: center;
+        color: var(--primary-color);
+        font-size: x-large;
+    }
+
     .api{
         gap: 30px;
         display: grid;

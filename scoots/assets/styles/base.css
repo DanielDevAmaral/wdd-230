@@ -76,6 +76,10 @@ header{
 
 /* Barra de Navegação ☝️ */
 
+.welcome{
+    display: none;
+}
+
 .hero-image img{
     width: 100%;
 }
@@ -177,6 +181,8 @@ th {
     color: var(--primary-color);
 }
 
+/* table ☝️ */
+
 .vehicles{
     display: none;
 }
@@ -192,4 +198,28 @@ th {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* rentals ☝️ */
+
+.form-rental{
+    display: grid;
+    grid-row: auto auto;
+    margin: 20px;
+}
+
+.agreedments{
+    grid-row: 1;
+}
+
+.agreedments h1{
+    text-align: center;
+}
+
+li::marker{
+    content: "🛵";
+}
+
+li{
+    padding-bottom: 20px;
 }
