@@ -1,0 +1,95 @@
+@media screen and (min-width: 768px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    :root{
+    --primary-color: #032558;
+    --secundary-color: #F4BC33;
+    --third-color: #808080;
+
+    --font-official: "Lato", sans-serif;
+    }
+
+    *{
+        font-family: var(--font-official);
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .link{
+        display: flex;
+        align-content: space-around;
+    }
+
+    .link a{
+        padding: 10px;
+        margin: 5px; 
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-menu{
+        align-content: space-around;
+        padding-right: 20px;
+    }
+
+    /* Barra de Navegação ☝️ */
+
+    .hero-special{
+        margin-right: 24px;
+        position: absolute;
+        top: 240px;
+        left: 284px;
+        background-color: #f6feff;
+        color: #14213d;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .hero-special a{
+        display:block;
+        background-color: var(--primary-color);
+        color: white;
+        border: 0;
+        padding: 0.7rem 2rem;
+        text-decoration: none;
+        width: fit-content;
+        align-self: self-end;
+    }
+
+    /* Hero ☝️ */
+
+    .api{
+        display: flex;
+        padding: 18px;
+    }
+
+    .api div{
+        width: 100%;
+    }
+
+    /* weather ☝️ */
+
+    footer{
+        align-items: center;
+        justify-content: space-between;
+    } 
+
+    .social{
+        display: flex;
+    }
+    
+    .social img{
+        width: 60px;
+    }
+
+
+}
