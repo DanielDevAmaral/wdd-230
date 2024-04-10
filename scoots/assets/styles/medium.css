@@ -96,6 +96,7 @@
     /* footer ☝️ */
 
     .letter-special{
+        display: block;
         margin-right: 24px;
         position: absolute;
         top: 77px;
