@@ -19,9 +19,10 @@ header{
 }
 
 .mobile{
+    font-size: -webkit-xxx-large;
     position: absolute;
-    top: 50px;
-    right: 10px;
+    top: 30px;
+    right: 20px;
     color: white;
     background: none;
     border: none;
@@ -91,6 +92,36 @@ header{
 
 .weather img{
     width: 25%;
+}
+
+.forecast{
+    border: 1px solid #032558;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: -webkit-center;
+    color: #032558;
+}
+
+.forecast img{
+    width: 25%;
+}
+/* Weather cards ☝️ */
+
+footer{
+    display: flex;
+    gap: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0 auto;
+    font-family: var(--font-official);
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.img-footer img{
+    width: 60px;
 }
 
 
