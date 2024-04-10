@@ -28,8 +28,8 @@
       </div>
       <div class="nav-menu">
         <nav class="link">
-          <a href="index.html" class="home active">HOME</a>
-          <a href="" class="rentals">RENTALS</a>
+          <a href="index.html" class="home">HOME</a>
+          <a href="rentals.html" class="rentals active">RENTALS</a>
           <a href="" class="reservations">RESERVATIONS</a>
           <a href="" class="contact">CONTACT</a>
         </nav>
@@ -43,38 +43,58 @@
           <picture>
             <source
               media="(min-width:650px)"
-              srcset="assets/images/hero-medium.webp"
+              srcset="assets/images/rental-hero-medium.webp"
             />
             <source
               media="(min-width:465px)"
-              srcset="assets/images/hero-small.webp"
+              srcset="assets/images/rental-hero-small.webp"
             />
-            <img src="assets/images/hero.webp" alt="Scoot's with Us!" />
+            <img src="assets/images/rental-hero.webp" alt="Rent your Vehicle" />
           </picture>
         </div>
         <div class="hero-special">
           <h2>
-            Explore Cozumel hassle-free with Scoots! Rent a scooter, jeep, or
-            ATV today and start your adventure. Convenient locations near the
-            ferry dock and cruise terminals. 
-            Book now and ride in style! 🛵🌴
-            #ScootWithUs
+            RENT
           </h2>
-          <a href="/chamber/join.html" class="rent-button">Rent now</a>
         </div>
-        <div class="hero-call">
-          <p>
-            <strong>Welcome to Scoots</strong> - your premier destination for
-            hassle-free car rentals in the stunning landscapes of Hawaii. Embark
-            on unforgettable journeys across the islands with our diverse fleet
-            of reliable vehicles.
-          </p>
+        <div class="vehicles">
+          <div class="card">
+
+          </div>
+          <div class="card">
+            
+          </div>
+          <div class="card">
+            
+          </div>
+
+
+          <div class="card">
+            
+          </div>
+          <div class="card">
+            
+          </div>
+          <div class="card">
+            
+          </div>
         </div>
-      </div>
-      <div class="api">
-        <div class="weather"></div>
-        <div class="forecast"></div>
-      </div>
+
+        <div class="table">
+          <table id="rental-table">
+            <thead>
+              <tr>
+                <th>Rental Type</th>
+                <th>Max Persons</th>
+                <th>Reservation</th>
+                <th>Walk-In</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+      
       <footer>
         <div class="img-footer">
           <img src="assets/images/scoot.webp" alt="Scooter" />
@@ -95,5 +115,6 @@
 
     <script src="assets/scripts/menuBt.js"></script>
     <script src="assets/scripts/weather.js"></script>
+    <script src="assets/scripts/table.js"></script>
   </body>
 </html>
