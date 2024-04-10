@@ -77,7 +77,9 @@ header{
 /* Barra de Navegação ☝️ */
 
 .welcome{
-    display: none;
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 .hero-image img{
@@ -208,8 +210,19 @@ th {
 
 .form-rental{
     display: grid;
-    grid-row: auto auto;
+    grid-row: auto auto auto;
     margin: 20px;
+}
+
+.maps{
+    grid-row: 3;
+    text-align: -webkit-center;
+}
+
+.maps iframe{
+    border: none;
+    width: auto;
+    height: auto;
 }
 
 .agreedments{
@@ -227,3 +240,18 @@ li::marker{
 li{
     padding-bottom: 20px;
 }
+
+.location{
+    text-align: center;
+    color: var(--primary-color);
+    grid-row: 2;
+}
+
+.map-card {
+
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid var(--primary-color);
+  }
+
+

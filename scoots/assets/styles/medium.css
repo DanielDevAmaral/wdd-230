@@ -71,6 +71,7 @@
     .api{
         display: flex;
         padding: 2em;
+        justify-content: center;
         
     }
 
@@ -127,12 +128,26 @@
         margin: 25px;
         gap: 30px;
     }
+
+    .form-rental form{
+        margin: 25px;
+    }
+
+    .location{
+        display: none;
+    }
+
+    .maps iframe{
+        width: 400px;
+        height: 200px;
+    }
     
-    .agreedments{
+    .agreedments, .maps{
         background-color: var(--primary-color);
         color: white;
         padding: 20px;
         grid-column: 2;
+        grid-row: 1;
     }
     
     li{

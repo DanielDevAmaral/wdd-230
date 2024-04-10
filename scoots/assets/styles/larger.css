@@ -7,9 +7,9 @@
     }
 
     .hero-special{
-        top: 280px;
-        right: 174px;
-        left: 500px;
+        top: 230px;
+        right: 140px;
+        left: 530px;
     }
 
     .hero-call{
@@ -71,6 +71,11 @@
     
     .letter-special{
         left: 455px;
+    }
+
+    .maps iframe{
+        width: 500px;
+        height: 400px;
     }
 }
 
