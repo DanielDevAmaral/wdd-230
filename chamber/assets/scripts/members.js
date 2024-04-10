@@ -1,4 +1,5 @@
-const url = "https://danieldevamaral.github.io/wdd230/data/members.json";
+const url = "https://danieldevamaral.github.io/wdd230/chamber/assets/data/members.json";
+
 
 async function getData() {
   try {

@@ -1,7 +1,5 @@
 
-lastmod = `Last modified: ${document.lastModified}`
-flag = `<img src="assets\\images\\flag.png" alt="Brazil Flag">`
-footerDetails = `&copy${new Date().getFullYear()} | Daniel Amaral | Brazil <img class="flag" src="assets\\images\\flag.png" alt="Brazil Flag">`
+footerDetails = `WDD 230 Project &copy | Daniel Amaral | Last modified: ${document.lastModified}` 
 document.querySelector("#currentYear").innerHTML += footerDetails;
-document.querySelector("#lastModified").innerHTML = lastmod;
+
 
