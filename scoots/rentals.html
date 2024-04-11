@@ -1,124 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/medium.css" />
-    <link rel="stylesheet" href="assets/styles/larger.css" />
-
-    <meta property="og:title" content="Scoots - Rent Company" />
-    <meta property="og:type" content="Rent Company" />
-    <meta
-      property="og:url"
-      content="https://danieldevamaral.github.io/wdd230/"
-    />
-    <meta name="author" content="Daniel Leite Amaral" />
-    <meta
-      name="description"
-      content="Scoot in Hawaii, need a ride to enjoy the island? We are here for you!"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/medium.css">
+    <link rel="stylesheet" href="assets/styles/larger.css">
+    <meta property="og:title" content="Scoots - Rent Company">
+    <meta property="og:type" content="Rent Company">
+    <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/">
+    <meta name="author" content="Daniel Leite Amaral">
+    <meta name="description" content="Scoot in Hawaii, need a ride to enjoy the island? We are here for you!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Rent Company</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="assets/images/logo.webp" alt="Scoots - Rent Company - Logo" />
-      </div>
-      <div class="nav-menu">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="assets/images/logo.webp" alt="Scoots - Rent Company - Logo">
+    </div>
+    <div class="nav-menu">
         <nav class="link">
-          <a href="index.html" class="home">HOME</a>
-          <a href="rentals.html" class="rentals active">RENTALS</a>
-          <a href="reservations.html" class="reservations">RESERVATIONS</a>
-          <a href="contact.html" class="contact">CONTACT</a>
+            <a href="index.html" class="home">HOME</a>
+            <a href="rentals.html" class="rentals active">RENTALS</a>
+            <a href="reservations.html" class="reservations">RESERVATIONS</a>
+            <a href="contact.html" class="contact">CONTACT</a>
         </nav>
         <button class="mobile"></button>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-      <div class="hero">
+<main>
+    <div class="hero">
         <div class="hero-image">
-          <picture>
-            <source
-              media="(max-width:650px)"
-              srcset="assets/images/rental-hero-medium.webp"
-            />
-            <source
-              media="(max-width:465px)"
-              srcset="assets/images/rental-hero-small.webp"
-            />
-            <img src="assets/images/rental-hero.webp" alt="Rent your Vehicle" />
-          </picture>
+            <picture>
+                <source media="(max-width:650px)" srcset="assets/images/rental-hero-medium.webp">
+                <source media="(max-width:465px)" srcset="assets/images/rental-hero-small.webp">
+                <img src="assets/images/rental-hero.webp" alt="Rent your Vehicle">
+            </picture>
+        </div>
+        <div class="head-vehicle">
+            <h1>Rent a Vehicle</h1>
         </div>
         <div class="vehicles">
-          <div class="card">
-
-          </div>
-          <div class="card">
-            
-          </div>
-          <div class="card">
-            
-          </div>
-
-
-          <div class="card">
-            
-          </div>
-          <div class="card">
-            
-          </div>
-          <div class="card">
-            
-          </div>
+            <div class="card">
+                <img src="assets/images/3.webp" alt="Jeep Wrangler - 2 door">
+                <h2>Jeep Wrangler - 2 door</h2>
+            </div>
+            <div class="card">
+                <img src="assets/images/8.webp" alt="Jeep Wrangler - 4 door with a/c">
+                <h2>Jeep Wrangler - 4 door with a/c</h2>
+            </div>
+            <div class="card">
+                <img src="assets/images/5.webp" alt="Honda PCX150 Scooter">
+                <h2>Honda PCX150 Scooter</h2>
+            </div>
+            <div class="card">
+                <img src="assets/images/6.webp" alt="Honda Dio Scooter">
+                <h2>Honda Dio Scooter</h2>
+            </div>
+            <div class="card">
+                <img src="assets/images/7.webp" alt="Honda Metro Scooter">
+                <h2>Honda Metro Scooter</h2>
+            </div>
+            <div class="card">
+                <img src="assets/images/4.webp" alt="Honda Pioneer ATV">
+                <h2>Honda Pioneer ATV</h2>
+            </div>
         </div>
 
         <div class="table">
-          <h1>Max Rental Pricing</h1>
-          <table id="rental-table">
-            <thead>
-              <tr>
-                <th rowspan="2">Rental Type</th>
-                <th rowspan="2">Max Persons</th>
-                <th colspan="2">Reservation</th>
-                <th colspan="2">Walk-In</th>
-              </tr>
-              <tr>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-              </tr>
-            </thead>
-            <tbody id="table-body">
-            </tbody>
-          </table>
-          <a href="/chamber/join.html" class="rent-button">Rent now</a>
+            <h1>Max Rental Pricing</h1>
+            <table id="rental-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Rental Type</th>
+                        <th rowspan="2">Max Persons</th>
+                        <th colspan="2">Reservation</th>
+                        <th colspan="2">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+            <a href="/chamber/join.html" class="rent-button">Rent now</a>
         </div>
-      </main>
-      
-      <footer>
-        <div class="img-footer">
-          <img src="assets/images/scoot.webp" alt="Scooter" />
-        </div>
-        <div class="name">
-          <p><strong>SCOOTER RENTAL COMPANY</strong> BY DANIEL AMARAL 2024</p>
-        </div>
-        <div class="social">
-          <a href="https://www.facebook.com"
-            ><img src="assets/images/fb-icon.webp" alt="Facebook"
-          /></a>
-          <a href="https://www.youtube.com"
-            ><img src="assets/images/yt-icon.webp" alt="Twitter"
-          /></a>
-        </div>
-      </footer>
-    
+    </div>
+</main>
 
-    <script src="assets/scripts/menuBt.js"></script>
-    <script src="assets/scripts/weather.js"></script>
-    <script src="assets/scripts/table.js"></script>
-  </body>
+<footer>
+    <div class="img-footer">
+        <img src="assets/images/scoot.webp" alt="Scooter">
+    </div>
+    <div class="name">
+        <p><strong>SCOOTER RENTAL COMPANY</strong> BY DANIEL AMARAL 2024</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com"><img src="assets/images/fb-icon.webp" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img src="assets/images/yt-icon.webp" alt="Twitter"></a>
+    </div>
+</footer>
+
+<script src="assets/scripts/menuBt.js"></script>
+<script src="assets/scripts/weather.js"></script>
+<script src="assets/scripts/table.js"></script>
+</body>
 </html>

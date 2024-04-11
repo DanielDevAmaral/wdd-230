@@ -134,6 +134,17 @@
 
     /*test */
 
+    .vehicles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .head-vehicle{
+        font-size: 2em;
+        margin: 0.67em 0;
+    }
+
     .forecast img{
         width: 14%;
     }

@@ -1,141 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/medium.css" />
-    <link rel="stylesheet" href="assets/styles/larger.css" />
-    <link rel="stylesheet" href="assets/styles/form.css" />
-
-    <meta property="og:title" content="Scoots - Rent Company" />
-    <meta property="og:type" content="Rent Company" />
-    <meta
-      property="og:url"
-      content="https://danieldevamaral.github.io/wdd230/"
-    />
-    <meta name="author" content="Daniel Leite Amaral" />
-    <meta
-      name="description"
-      content="Scoot in Hawaii, need a ride to enjoy the island? We are here for you!"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/medium.css">
+    <link rel="stylesheet" href="assets/styles/larger.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+    <meta property="og:title" content="Scoots - Rent Company">
+    <meta property="og:type" content="Rent Company">
+    <meta property="og:url" content="https://danieldevamaral.github.io/wdd230/">
+    <meta name="author" content="Daniel Leite Amaral">
+    <meta name="description" content="Scoot in Hawaii, need a ride to enjoy the island? We are here for you!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Rent Company</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="assets/images/logo.webp" alt="Scoots - Rent Company - Logo" />
-      </div>
-      <div class="nav-menu">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="assets/images/logo.webp" alt="Scoots - Rent Company - Logo">
+    </div>
+    <div class="nav-menu">
         <nav class="link">
-          <a href="index.html" class="home">HOME</a>
-          <a href="rentals.html" class="rentals">RENTALS</a>
-          <a href="reservations.html" class="reservations active">RESERVATIONS</a>
-          <a href="contact.html" class="contact">CONTACT</a>
+            <a href="index.html" class="home">HOME</a>
+            <a href="rentals.html" class="rentals">RENTALS</a>
+            <a href="reservations.html" class="reservations active">RESERVATIONS</a>
+            <a href="contact.html" class="contact">CONTACT</a>
         </nav>
         <button class="mobile"></button>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-      <div class="hero">
+<main>
+    <div class="hero">
         <div class="hero-image">
-          <picture>
-            <source
-              media="(max-width:650px)"
-              srcset="assets/images/reservation-hero-medium.webp"
-            />
-            <source
-              media="(max-width:465px)"
-              srcset="assets/images/reservation-hero-small.webp"
-            />
-            <img src="assets/images/reservation-hero.webp" alt="Scoot's with Us!" />
-          </picture>
+            <picture>
+                <source media="(max-width:650px)" srcset="assets/images/reservation-hero-medium.webp">
+                <source media="(max-width:465px)" srcset="assets/images/reservation-hero-small.webp">
+                <img src="assets/images/reservation-hero.webp" alt="Scoot's with Us!">
+            </picture>
         </div>
-      <div class="welcome">
-        <h1>
-          Make your Reservation Here!
-        </h1>
-      </div>
-      <div class="form-rental">
+        <div class="welcome">
+            <h1>Make your Reservation Here!</h1>
+        </div>
+    </div>
+    <div class="form-rental">
         <form action="/submit_rental_details" method="post">
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" required placeholder="YYYY-MM-DD" /><br />
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
         
-          <label for="period">Rental Period:</label>
-          <select id="period" name="period" required>
-            <option value="">-- Please Select --</option>
-            <option value="full_day">Full Day</option>
-            <option value="half_day">Half Day</option>
-          </select><br />
+            <label for="period">Rental Period:</label>
+            <select id="period" name="period" required>
+                <option value="">-- Please Select --</option>
+                <option value="full_day">Full Day</option>
+                <option value="half_day">Half Day</option>
+            </select><br>
         
-          <label for="rental_type">Rental Type:</label>
-          <select id="rental_type" name="rental_type" required>
-            <option value="">-- Please Select --</option>
-            <option value="motor_scooter">Motor Scooter</option>
-            <option value="jeep">Jeep</option>
-            <option value="atv">Side-by-Side ATV</option>
-          </select><br />
+            <label for="rental_type">Rental Type:</label>
+            <select id="rental_type" name="rental_type" required>
+                <option value="">-- Please Select --</option>
+                <option value="motor_scooter">Motor Scooter</option>
+                <option value="jeep">Jeep</option>
+                <option value="atv">Side-by-Side ATV</option>
+            </select><br>
         
-          <label for="number">Number of Rentals:</label>
-          <input type="number" id="number" name="number" min="1" required placeholder="Enter a number" /><br />
+            <label for="number">Number of Rentals:</label>
+            <input type="number" id="number" name="number" min="1" required placeholder="Enter a number"><br>
         
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XXXX" /><br />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XXXX"><br>
         
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" /><br />
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name"><br>
         
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="example@example.com" /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com"><br>
         
-          <label for="home_location">Home State or Country:</label>
-          <input type="text" id="home_location" name="home_location" required placeholder="Your Home State or Country" /><br />
+            <label for="home_location">Home State or Country:</label>
+            <input type="text" id="home_location" name="home_location" required placeholder="Your Home State or Country"><br>
         
-          <label for="cruise_line">Cruise Line (if applicable):</label>
-          <input type="text" id="cruise_line" name="cruise_line" placeholder="Cruise Line Name" /><br />
+            <label for="cruise_line">Cruise Line (if applicable):</label>
+            <input type="text" id="cruise_line" name="cruise_line" placeholder="Cruise Line Name"><br>
         
-          <label for="special_requests">Special Accommodations/Comments:</label><br />
-          <textarea id="special_requests" name="special_requests" rows="4" cols="50" placeholder="Any special requests or comments"></textarea><br />
+            <label for="special_requests">Special Accommodations/Comments:</label><br>
+            <textarea id="special_requests" name="special_requests" rows="4" cols="50" placeholder="Any special requests or comments"></textarea><br>
         
-          <input type="submit" value="Make a Reservation" />
+            <input type="submit" value="Make a Reservation">
         </form>
-        <div class="agreedments">
-          <h1>Rental Services and Agreements</h1>
-          <ul>
-            <li>A $50 security deposit is required to confirm reservations.</li>
-            <li>A valid driver's license is required in hand at the time of rental.</li>
-            <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
-            <li>Fuel charge is not included.</li>
-            <li>Unlimited mileage.</li>
-            <li>Liability insurance is included.</li>
-            <li>Damage insurance is available for purchase.</li>
-            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-            <li>Rentals may be returned to either physical location.</li>
-          </ul>
+        <div class="agreements">
+            <h1>Rental Services and Agreements</h1>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver's license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="img-footer">
-        <img src="assets/images/scoot.webp" alt="Scooter" />
-      </div>
-      <div class="name">
-        <p><strong>SCOOTER RENTAL COMPANY</strong> BY DANIEL AMARAL 2024</p>
-      </div>
-      <div class="social">
-        <a href="https://www.facebook.com"
-          ><img src="assets/images/fb-icon.webp" alt="Facebook"
-        /></a>
-        <a href="https://www.youtube.com"
-          ><img src="assets/images/yt-icon.webp" alt="Twitter"
-        /></a>
-      </div>
-    </footer>
+    </div>
+</main>
 
-    <script src="assets/scripts/menuBt.js"></script>
-    <script src="assets/scripts/weather.js"></script>
-  </body>
+<footer>
+    <div class="img-footer">
+        <img src="assets/images/scoot.webp" alt="Scooter">
+    </div>
+    <div class="name">
+        <p><strong>SCOOTER RENTAL COMPANY</strong> BY DANIEL AMARAL 2024</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com"><img src="assets/images/fb-icon.webp" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img src="assets/images/yt-icon.webp" alt="Youtube"></a>
+    </div>
+</footer>
+
+<script src="assets/scripts/menuBt.js"></script>
+<script src="assets/scripts/weather.js"></script>
+</body>
 </html>
