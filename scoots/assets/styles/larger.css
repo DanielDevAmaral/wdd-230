@@ -125,7 +125,7 @@
       }
       
       .Scooters p, .ATVs p, .Jeeps p {
-        color: var(--third-color);
+        color: var(--primary-color);
       }
       
       .Scooters:hover, .ATVs:hover, .Jeeps:hover {
