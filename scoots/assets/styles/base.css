@@ -324,3 +324,10 @@ li {
 .agreements h1{
     color: var(--primary-color);
 }
+
+.thanks{
+    color: var(--primary-color);
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+}
