@@ -1,41 +1,42 @@
-@media screen and (min-width: 768px){
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
-    :root{
+/* Global Styles */
+:root {
     --primary-color: #032558;
     --secundary-color: #F4BC33;
     --third-color: #808080;
-
     --font-official: "Lato", sans-serif;
-    }
+}
 
-    *{
-        font-family: var(--font-official);
-    }
+* {
+    font-family: var(--font-official);
+}
 
-    header{
+/* Media Query */
+@media screen and (min-width: 768px) {
+    header {
         justify-content: space-between;
     }
 
-    .mobile{
+    .mobile {
         display: none;
     }
 
-    .link{
+    .link {
         display: flex;
         align-content: space-around;
     }
 
-    .link a{
+    .link a {
         padding: 10px;
         margin: 5px; 
         text-decoration: none;
         color: white;
     }
 
-    .nav-menu{
+    .nav-menu {
         align-content: space-around;
         padding-right: 20px;
         align-self: center;
@@ -43,7 +44,7 @@
 
     /* Barra de Navegação ☝️ */
 
-    .hero-special{
+    .hero-special {
         margin-right: 24px;
         position: absolute;
         top: 240px;
@@ -56,8 +57,8 @@
         padding: 2rem;
     }
 
-    .hero-special a{
-        display:block;
+    .hero-special a {
+        display: block;
         background-color: var(--primary-color);
         color: white;
         border: 0;
@@ -69,35 +70,34 @@
 
     /* Hero ☝️ */
 
-    .api{
+    .api {
         display: flex;
         padding: 2em;
         justify-content: center;
-        
     }
 
-    .api .temp{
+    .api .temp {
         width: 70%;
     }
 
     /* weather ☝️ */
 
-    footer{
+    footer {
         align-items: center;
         justify-content: space-between;
     } 
 
-    .social{
+    .social {
         display: flex;
     }
     
-    .social img{
+    .social img {
         width: 60px;
     }
 
     /* footer ☝️ */
 
-    .letter-special{
+    .letter-special {
         display: block;
         margin-right: 24px;
         position: absolute;
@@ -110,40 +110,42 @@
         width: fit-content;
     }
 
-    .letter-special h2{
+    .letter-special h2 {
         font-weight: 200;
         font-size: 186px;
-
     }
 
-
-    th{
+    th {
         font-size: medium;
+    }
+
+    .table{
+        text-align: -webkit-center;
     }
 
     /* table ☝️ */
 
-    .form-rental{
+    .form-rental {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 25px;
         gap: 30px;
     }
 
-    .form-rental form{
+    .form-rental form {
         margin: 25px;
     }
 
-    .location{
+    .location {
         display: none;
     }
 
-    .maps iframe{
+    .maps iframe {
         width: 400px;
         height: 200px;
     }
     
-    .agreedments, .maps{
+    .agreedments, .maps {
         background-color: var(--primary-color);
         color: white;
         padding: 20px;
@@ -151,12 +153,9 @@
         grid-row: 1;
     }
     
-    li{
+    li {
         padding-bottom: 30px;
     }
 
     /* form ☝️ */
-
-
-
 }
