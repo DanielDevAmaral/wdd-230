@@ -320,3 +320,7 @@ li {
     margin: 15px;
     border: 1px solid var(--primary-color);
 }
+
+.agreements h1{
+    color: var(--primary-color);
+}

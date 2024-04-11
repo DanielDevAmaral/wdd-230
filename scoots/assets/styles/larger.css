@@ -38,6 +38,7 @@
         width: 85%;
         grid-column: 2;
         grid-row: 2;
+        align-self: center;
     }
 
     .forecast{
