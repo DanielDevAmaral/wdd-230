@@ -67,6 +67,11 @@
         line-height: 1.4em;
     }
 
+    .text-split h2{
+        line-height: 1.4em;
+    }
+
+
     .text-bottom{
 
         color: var(--primary-color);
