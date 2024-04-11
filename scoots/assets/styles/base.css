@@ -104,6 +104,18 @@ header{
     display: none;
 }
 
+.text-split{
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4em;
+}
+
+.text-split h2{
+    text-align: center;
+}
+
 .weather{
     background-color: #032558;
     padding: 20px;
@@ -127,6 +139,35 @@ header{
 .forecast img{
     width: 25%;
 }
+
+.text-bottom h2{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.Scooters, .ATVs, .Jeeps {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .Scooters h3, .ATVs h3, .Jeeps h3 {
+    color: var(--primary-color);
+  }
+  
+  .Scooters p, .ATVs p, .Jeeps p {
+    color: var(--third-color);
+  }
+  
+  .Scooters:hover, .ATVs:hover, .Jeeps:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
 /* Weather cards ☝️ */
 
 footer{
